@@ -25,7 +25,7 @@ static bool GetInt(string::const_iterator& s_it,
   while (s_it != it_end && *s_it >= '0' && *s_it <= '9')
   {
     value = value * 10 + static_cast<int64_t>(*s_it++) - 48;
-  }
+  }//nice
   if (s_it == s_it2) return false; //no value
   //trim trailing space and a comma if present
   while (s_it != it_end && *s_it == ' ') ++s_it;
