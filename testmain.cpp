@@ -17,7 +17,7 @@ static bool GetInt(string::const_iterator& s_it,
   const string::const_iterator& it_end, int64_t& value)
 {
   value = 0;
-  while (s_it != it_end && *s_it == ' ') ++s_it;
+  while (s_it != it_end && *s_it == ' ') ++s_it;//yes
   if (s_it == it_end) return false;
   bool is_neg = (*s_it == '-');
   if (is_neg) ++s_it;
